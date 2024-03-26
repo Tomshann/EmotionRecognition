@@ -113,8 +113,8 @@ model.add(Dense(7,activation="softmax"))
 print(model.summary())
 model.compile(optimizer=Adam(learning_rate=0.0001),loss="categorical_crossentropy",metrics=["accuracy"])
 
-batch = 64
-epochs = 10
+batch = 128
+epochs = 1
 
 steps_per_epoch = np.ceil(len(X_train)/batch)
 validation_steps = np.ceil(len(X_test)/batch)
@@ -128,13 +128,13 @@ history = model.fit(X_train,Y_train,batch_size=batch,epochs=epochs,verbose=1,val
 # show the results based on pyplot
 
 acc = history.history['accuracy']
-val_acc = history.history['val_acc']
+val_acc = history.history['val_accuracy']
 loss = history.history['loss']
 val_loss = history.history['val_loss']
 epochs = range(len(acc))
 # show the train and validation accuracy charts
 
-plt.plot(epochs, acc , 'r', label='Training accuracy')
+plt.plot(epochs, acc, 'r', label='Training accuracy')
 plt.plot(epochs, val_acc, 'b', label='Validation accuracy')
 plt.xlabel('epoch')
 plt.ylabel('Accuracy')
@@ -148,9 +148,10 @@ plt.plot(epochs, loss , 'r', label='Training loss')
 plt.plot(epochs, val_loss, 'b', label='Validation loss')
 plt.xlabel('epoch')
 plt.ylabel('Loss')
-plt.title('Training and validation accuracy')
+plt.title('Training and validation loss')
 plt.legend(loc='upper right')
 plt.show()
 
 #save the model
-modelFileName = "./temp/emotion.h5"
+modelFileName = "/temp/emotion.h5"
+model.save(modelFileName)
