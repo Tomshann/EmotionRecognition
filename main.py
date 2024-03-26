@@ -9,6 +9,7 @@ from keras.optimizers import Adam
 from keras.callbacks import EarlyStopping
 import matplotlib.pyplot as plt
 """
+This model was trained using the FER-2013 dataset
 Notes: 
 Test model using constrative loss function
 try more epochs with lower batch sizes
