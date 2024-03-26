@@ -114,7 +114,7 @@ print(model.summary())
 model.compile(optimizer=Adam(learning_rate=0.0001),loss="categorical_crossentropy",metrics=["accuracy"])
 
 batch = 128
-epochs = 1
+epochs = 250
 
 steps_per_epoch = np.ceil(len(X_train)/batch)
 validation_steps = np.ceil(len(X_test)/batch)
@@ -153,5 +153,5 @@ plt.legend(loc='upper right')
 plt.show()
 
 #save the model
-modelFileName = "/temp/emotion.h5"
+modelFileName = "C:/Users/tomsh/PycharmProjects/Emotion Recognition/models/emotion.keras"
 model.save(modelFileName)
