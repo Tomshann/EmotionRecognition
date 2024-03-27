@@ -153,5 +153,5 @@ plt.legend(loc='upper right')
 plt.show()
 
 #save the model
-modelFileName = "C:/Users/tomsh/PycharmProjects/Emotion Recognition/models/emotion.keras"
+modelFileName = "C:/Users/tomsh/PycharmProjects/Emotion Recognition/models/emotion.h5"
 model.save(modelFileName)

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b59de9b0-59e6-4ff8-9eb4-b22b54e6ed04" name="Changes" comment="Fixed errors with plots">
+    <list default="true" id="b59de9b0-59e6-4ff8-9eb4-b22b54e6ed04" name="Changes" comment="added correct number of epochs and batch size">
+      <change afterPath="$PROJECT_DIR$/angry.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toby.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -38,9 +43,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.main.executor": "Run",
+    "Python.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/tomsh/PycharmProjects/Emotion Recognition",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,6 +57,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tomsh\PycharmProjects\Emotion Recognition" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tomsh\PycharmProjects\Emotion Recognition" />
     </key>
@@ -69,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711474322397</updated>
-      <workItem from="1711474330007" duration="10122000" />
+      <workItem from="1711474330007" duration="18368000" />
     </task>
     <task id="LOCAL-00001" summary="Adding project to github">
       <option name="closed" value="true" />
@@ -95,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711485362163</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added correct number of epochs and batch size">
+      <option name="closed" value="true" />
+      <created>1711486269325</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711486269325</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,9 +146,11 @@
     <MESSAGE value="Adding project to github" />
     <MESSAGE value="added comments" />
     <MESSAGE value="Fixed errors with plots" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed errors with plots" />
+    <MESSAGE value="added correct number of epochs and batch size" />
+    <option name="LAST_COMMIT_MESSAGE" value="added correct number of epochs and batch size" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Emotion_Recognition$main.coverage" NAME="main Coverage Results" MODIFIED="1711485814066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Emotion_Recognition$main.coverage" NAME="main Coverage Results" MODIFIED="1711494058791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Emotion_Recognition$test.coverage" NAME="test Coverage Results" MODIFIED="1711535339485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
